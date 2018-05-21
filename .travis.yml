@@ -3,7 +3,7 @@ sudo: true  # Only required if PLANEMO_TEST_STYLE runs with Docker
 python: 2.7
 env:
   global:
-    - PLANEMO_TEST_SCRIPT="https://raw.githubusercontent.com/galaxyproject/planemo/master/scripts/run_galaxy_workflow_tests.sh"
+    - PLANEMO_TEST_SCRIPT="https://raw.githubusercontent.com/galaxyproject/planemo/fix_docker_run/scripts/run_galaxy_workflow_tests.sh"
   matrix:
     # First variant not yet working, not sure why...
     - WORKFLOW_TEST=example1/wf3-shed-tools.ga PLANEMO_TEST_STYLE=test
